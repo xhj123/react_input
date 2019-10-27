@@ -1,0 +1,57 @@
+.react-ui__input {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.react-ui__input input {
+  box-sizing: border-box;
+  padding: 4px 11px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.input--suffix {
+  padding-right: 30px !important;
+}
+
+.input--prefix {
+  padding-left: 30px !important;
+}
+
+.react-ui__input .input_icon {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  line-height: 0; /*设置行高为0*/
+}
+
+.input_icon--suffix {
+  right: 12px;
+}
+
+.input_icon--prefix {
+  left: 12px;
+}
+
+.react-ui__input .input_icon .icon {
+  cursor: pointer;
+}
+
+.size-large input {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.size-middle input {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.size-small input {
+  line-height: 20px;
+  font-size: 12px;
+}

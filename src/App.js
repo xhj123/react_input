@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import InputNumber from './input/input'
 
-function App() {
+function App(){
+  const [value,setValue] = useState('aaa')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/*受控组件*/}
+      <InputNumber size='middle' suffix="sousuo" value={value} onChange={e=>{
+        // console.log(e.target.value)
+        setValue( e.target.value )
+      }}/>
+      <br />
+      {/*非受控组件*/}
+      <InputNumber size='small' prefix="sousuo" defaultValue={value} onChange={e=>{}}/>
     </div>
-  );
+  )
 }
 
 export default App;
